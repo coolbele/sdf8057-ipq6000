@@ -28,6 +28,7 @@ ALLWIFIBOARDS:= \
 	gl-ax1800 \
 	gl-axt1800 \
 	cmiot_ax18 \
+	jdcloud_ax1800pro \
 	qihoo_v6
 
 ALLWIFIPACKAGES:=$(foreach BOARD,$(ALLWIFIBOARDS),ath11k-wifi-$(BOARD))
@@ -87,6 +88,7 @@ endef
 
 $(eval $(call generate-ath11k-wifi-package,gl-ax1800,Gl.iNET AX1800))
 $(eval $(call generate-ath11k-wifi-package,gl-axt1800,Gl.iNET AXT1800))
+$(eval $(call generate-ath11k-wifi-package,jdcloud_ax1800pro,JDCloud AX1800 Pro))
 $(eval $(call generate-ath11k-wifi-package,cmiot_ax18,CMIOT_AX18))
 $(eval $(call generate-ath11k-wifi-package,qihoo_v6,QIHOO V6))
 
