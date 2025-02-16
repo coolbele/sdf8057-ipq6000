@@ -119,7 +119,7 @@ define Device/jdcloud_re-ss-01
 	SOC := ipq6000
 	BLOCKSIZE := 64k
 	KERNEL_SIZE := 6144k
-	DEVICE_DTS_CONFIG := config@cp03-c2
+	DEVICE_DTS_CONFIG := config@cp03-c1
 	DEVICE_PACKAGES := ipq-wifi-jdcloud_ax1800pro
 endef
 TARGET_DEVICES += jdcloud_re-ss-01
