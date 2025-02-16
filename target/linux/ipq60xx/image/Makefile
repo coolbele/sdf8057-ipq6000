@@ -113,13 +113,14 @@ TARGET_DEVICES += qihoo_v6
 
 define Device/jdcloud_re-ss-01
 	$(call Device/FitImage)
-	$(call Device/EmmcImage)
+	$(call Device/UbiFit)
 	DEVICE_VENDOR := JDCloud
 	DEVICE_MODEL := AX1800 Pro
-	SOC := ipq6000
 	BLOCKSIZE := 64k
 	KERNEL_SIZE := 6144k
+	DEVICE_DTS := ipq6000-re-ss-01.dts
 	DEVICE_DTS_CONFIG := config@cp03-c1
+	DEVICE_TITLE := jdcloud_ax1800pro
 	DEVICE_PACKAGES := ipq-wifi-jdcloud_ax1800pro
 endef
 TARGET_DEVICES += jdcloud_re-ss-01
